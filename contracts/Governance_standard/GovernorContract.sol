@@ -70,6 +70,7 @@ contract GovernorContract is
     }
 
     function propose(
+        // to start a proposal
         address[] memory targets,
         uint256[] memory values,
         bytes[] memory calldatas,
@@ -81,13 +82,18 @@ contract GovernorContract is
     function proposalThreshold()
         public
         view
-        override(Governor, GovernorSettings)
+        override(
+            // think this is how many votes does someone has to have to start a proposal
+            Governor,
+            GovernorSettings
+        )
         returns (uint256)
     {
         return super.proposalThreshold();
     }
 
     function _execute(
+        // to execute a proposal
         uint256 proposalId,
         address[] memory targets,
         uint256[] memory values,
