@@ -6,7 +6,7 @@
     "@typechain/hardhat": "^6.1.5",
     "@types/chai": "^4.3.4",
     "@types/node": "^18.14.0",
-    "ethers": "^6.0.5",
+    "ethers": "^5.4",
     "hardhat": "^2.12.7",
     "hardhat-deploy": "^0.11.23",
     "ts-node": "^10.9.1",
