@@ -16,9 +16,6 @@ const deployTimeLock: DeployFunction = async function (hre: HardhatRuntimeEnviro
     })
 }
 
-export default deployTimeLock
+// should add the wait confirmations and the etherscan verification
 
-// uint256 minDelay,
-// address[] memory proposers,
-// address[] memory executors,
-// address admin
+export default deployTimeLock

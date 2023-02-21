@@ -17,7 +17,7 @@ const deployGovernorContract: DeployFunction = async function (hre: HardhatRunti
         args: [
             governanceToken.address,
             timeLock.address,
-            QUORUM_PERCENTAGE,
+            QUORUM_PERCENTAGE, //this variables are explained in the helper-hardhat-config
             VOTING_PERIOD,
             VOTING_DELAY,
         ],

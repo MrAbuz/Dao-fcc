@@ -1,6 +1,6 @@
-const { network } = require("hardhat")
+import { network } from "hardhat"
 
-function sleep(timeInMs) {
+/*function sleep(timeInMs) {
     return new Promise((resolve) => setTimeout(resolve, timeInMs))
 }
 
@@ -23,3 +23,4 @@ module.exports = {
     moveBlocks,
     sleep,
 }
+*/
