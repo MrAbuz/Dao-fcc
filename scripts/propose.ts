@@ -43,7 +43,7 @@ export async function propose(args: any[], functionToCall: string, proposalDescr
     // So first we read all the current proposals
     let proposals = JSON.parse(fs.readFileSync(proposalsFile, "utf8")) //yarn add --dev fs. first we check if there are proposals and get them
     // We already started the proposals.json with {"31337": []}, so we just need to push. think in other repo we did logic to actually create the [] but its the same, makes sense
-    proposals[network.config.chainId!.toString()].push(proposalId.toString()) // then we save this proposals (! means "yes there will be a chainId" didnt understand 100% this !)
+    proposals[network.config.chainId!.toString()].push(proposalId.toString()) // then we save this proposals (! means "yes there will be a chainId" didnt understand 100% this !). Okay, without ! it gives error saying its possibly undefined
     fs.writeFileSync(proposalsFile, JSON.stringify(proposals)) //and then we'll write it back
 }
 
